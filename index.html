@@ -3,31 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My NOCCCO Chatbot</title>
+    <title>Noccco Bot - Your AI Assistant</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f4f4f4; }
-        h1 { color: #333; }
-        .chat-container { 
-            width: 100%; 
-            max-width: 800px; 
-            height: 600px; 
-            margin: 20px auto; 
-            border: 2px solid #007bff; 
-            border-radius: 10px; 
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        .subtitle {
+            margin: 8px 0 0;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .chat-box {
+            width: 100%;
+            max-width: 950px;
+            height: 680px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 123, 255, 0.25);
             overflow: hidden;
+            border: 1px solid #ddd;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #666;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Noccco Chatbot</h1>
-    <p>Ask anything! The bot is ready to help.</p>
-    
-    <!-- Your Botpress Chatbot will appear here -->
-    <div class="chat-container" id="webchat-container">    
+    <header>
+        <h1>Noccco Bot</h1>
+        <p class="subtitle">Your Intelligent AI Assistant</p>
+    </header>
+
+    <div class="container">
+        <div class="
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2026/04/13/19/20260413194708-JWV0R3H5.js" defer></script>
+    " id="webchat-container">
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/04/13/19/20260413194708-JWV0R3H5.js" defer></script>
+        </div>
     </div>
 
-    <p>Made by Noccco Plc</p>
+    <footer>
+        Made with ❤️ using Botpress • Powered by Noccco
+    </footer>
 </body>
 </html>
